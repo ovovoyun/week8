@@ -1,0 +1,71 @@
+//customer
+$imgPath: "../images/";
+
+//breakpoint
+$breakpoint-md: map-get($grid-breakpoints, md);
+$breakpoint-lg: map-get($grid-breakpoints, lg);
+
+//color
+$primary-100: #e9e2f3;
+$primary-200: #AD93CF;
+$primary-300: #7000ff;
+$primary-400: #6e01f8;
+$primary-500: #380c7e;
+$primary-600: #1F0F39;
+$primary-700: #11002D;
+
+$theme-colors: map-merge(
+    $theme-colors,
+    (
+        "primary-100": $primary-100,
+        "primary-200": $primary-200,
+        "primary-300": $primary-300,
+        "primary-400": $primary-400,
+        "primary-500": $primary-500,
+        "primary-600": $primary-600,
+        "primary-700": $primary-700,
+    )
+);
+
+//font
+$custom-fonts: "Noto Sans TC";
+$font-family-sans-serif:
+    #{$custom-fonts},
+    #{$font-family-sans-serif};
+
+$headings-line-height: 1.5;
+$font-sizes: map-merge(
+    $font-sizes,
+    (
+        18: 18px,
+        48: 48px,
+        96: 96px
+    )
+);
+
+//space
+$spacers: map-merge(
+    $spacers,
+    (
+        12: 12px,
+        28: 28px,
+        32: 32px,
+        40: 40px,
+        56: 56px,
+        80: 80px
+    )
+);
+
+$headings-margin-bottom: 0;
+$paragraph-margin-bottom: 0;
+
+//nav
+
+//button
+$btn-font-weight: 500;
+
+//link underline
+$link-decoration: none;
+
+//card
+$card-spacer-x: 24px;

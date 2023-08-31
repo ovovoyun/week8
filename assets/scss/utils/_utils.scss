@@ -1,7 +1,45 @@
-.translate-50{
+.ff-shrikhand {
+    font-family: "Shrikhand";
+}
+
+.translate-50 {
     transform: translate(-50px, -50px);
 }
 
-.userSelect-none{
+.userSelect-none {
     user-select: none;
+}
+
+.position-lg-static {
+    @include lg {
+        position: static !important;
+    }
+}
+
+.fw-medium{
+    font-weight: 500;
+}
+
+.word-break{
+    word-break: break-all;
+}
+
+.letter-10{
+    letter-spacing: 0.1em;
+}
+
+.letter-30{
+    letter-spacing: 0.3em;
+}
+
+.letter-100{
+    letter-spacing: 1em;
+}
+
+.letter-130{
+    letter-spacing: 1.3em;
+}
+
+.text-justify{
+    text-align-last: justify;
 }

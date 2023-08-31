@@ -1,0 +1,17 @@
+.navbar-bg{
+    @include gradient-y($primary-300, #6900ee);
+}
+
+.navbar-collapse{
+    top: 70px;
+}
+
+.navbar-collapse-bg{
+    @include gradient-y(#6900ee, $primary-700);
+    transform: translateX(-50%);
+
+    @include lg{
+        background-image: none;
+        transform: translateX(0px);
+    }
+}

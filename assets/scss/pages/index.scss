@@ -1,0 +1,63 @@
+
+//banner circle
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.circleImg {
+    @include size(196px, 196px);
+    animation-name: rotate;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+
+.ai_row{
+    @include lg{
+        min-height: 676px;
+    }
+}
+
+//banner ai img
+%banner_AI{
+    min-height: 350px;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    &:hover{
+        opacity: 1;
+        box-shadow: 0 0 16px 8px rgba(143, 0, 255, 0.8);
+    }
+
+    @include md{
+        min-height: 500px;
+    }
+}
+
+.banner_diane{
+    background-image: url("#{$imgPath}diane.png");
+    @extend %banner_AI;
+}
+
+.banner_felix{
+    background-image: url("#{$imgPath}felix.png");
+    @extend %banner_AI;
+}
+
+.banner_karina{
+    background-image: url("#{$imgPath}karina.png");
+    @extend %banner_AI;
+}
+
+.banner_vito{
+    background-image: url("#{$imgPath}vito.png");
+    @extend %banner_AI;
+}
