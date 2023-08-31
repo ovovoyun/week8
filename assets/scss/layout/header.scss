@@ -1,5 +1,5 @@
 .navbar-bg{
-    @include gradient-y($primary-300, #6900ee);
+    @include gradient-y($primary-300, #7001ff);
 }
 
 .navbar-collapse{
@@ -7,7 +7,7 @@
 }
 
 .navbar-collapse-bg{
-    @include gradient-y(#6900ee, $primary-700);
+    @include gradient-y(#7001ff, $primary-700);
     transform: translateX(-50%);
 
     @include lg{

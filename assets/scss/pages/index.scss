@@ -1,3 +1,13 @@
+//banner bg
+.banner_bg{
+    background-image: url("#{$imgPath}home_background.png");
+    background-position: top center;
+    background-size: cover;
+
+    @include lg{
+        max-height: 880px;
+    }
+}
 
 //banner circle
 @keyframes rotate {
@@ -28,6 +38,7 @@
 //banner ai img
 %banner_AI{
     min-height: 350px;
+    max-height: 676px;
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -45,19 +56,50 @@
 .banner_diane{
     background-image: url("#{$imgPath}diane.png");
     @extend %banner_AI;
+
+    @include md{
+        background-image: url("#{$imgPath}diane_square1.png");
+    }
 }
 
 .banner_felix{
     background-image: url("#{$imgPath}felix.png");
     @extend %banner_AI;
+
+    @include md{
+        background-image: url("#{$imgPath}felix_square1.png");
+    }
 }
 
 .banner_karina{
     background-image: url("#{$imgPath}karina.png");
     @extend %banner_AI;
+
+    @include md{
+        background-image: url("#{$imgPath}karina_square1.png");
+    }
 }
 
 .banner_vito{
     background-image: url("#{$imgPath}vito.png");
     @extend %banner_AI;
+
+    @include md{
+        background-image: url("#{$imgPath}vito_square1.png");
+    }
+}
+
+
+.linear-dark{
+    @include gradient-x(#300871, $black);
+    height: 500px;
+}
+
+.bg-phone{
+    background-image: url("#{$imgPath}carousel_background.png");
+    background-position: center top;
+
+    @include lg{
+        width: 48% !important;
+    }
 }
