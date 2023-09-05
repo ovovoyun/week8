@@ -26,7 +26,7 @@ function moveOutputPlugin() {
 
 export default defineConfig({
    //Github Repo Name
-  base: '/vVibe/',
+  base: '/week8/',
   plugins: [
     //指定檔案儲存後，自動重新整理
     liveReload(['./layout/**/*.ejs', './pages/**/*.ejs', './pages/**/*.html']), 

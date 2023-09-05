@@ -31,14 +31,13 @@
 
 .ai_row{
     @include lg{
-        min-height: 676px;
+        min-height: 700px;
     }
 }
 
 //banner ai img
 %banner_AI{
     min-height: 350px;
-    max-height: 676px;
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -54,45 +53,59 @@
 }
 
 .banner_diane{
-    background-image: url("#{$imgPath}diane.png");
     @extend %banner_AI;
-
+    max-height: 700px;
+    background-image: url("#{$imgPath}diane_square1.png");
+    
     @include md{
-        background-image: url("#{$imgPath}diane_square1.png");
+        background-image: url("#{$imgPath}diane.png");
     }
 }
 
 .banner_felix{
-    background-image: url("#{$imgPath}felix.png");
     @extend %banner_AI;
-
+    max-height: 580px;
+    background-image: url("#{$imgPath}felix_square1.png");
+    
     @include md{
-        background-image: url("#{$imgPath}felix_square1.png");
+        background-image: url("#{$imgPath}felix.png");
     }
 }
 
 .banner_karina{
-    background-image: url("#{$imgPath}karina.png");
     @extend %banner_AI;
-
+    max-height: 580px;
+    background-image: url("#{$imgPath}karina_square1.png");
+    
     @include md{
-        background-image: url("#{$imgPath}karina_square1.png");
+        background-image: url("#{$imgPath}karina.png");
     }
 }
 
 .banner_vito{
-    background-image: url("#{$imgPath}vito.png");
     @extend %banner_AI;
-
+    max-height: 700px;
+    background-image: url("#{$imgPath}vito_square1.png");
+    
     @include md{
-        background-image: url("#{$imgPath}vito_square1.png");
+        background-image: url("#{$imgPath}vito.png");
     }
 }
 
+.linear-hr{
+    height: 40px;
+}
+
+.purpleToDark{
+    @include gradient-x($primary-300, $primary-700);
+}
+
+.darkToPurple{
+    @include gradient-x($primary-700, $primary-300);
+}
 
 .linear-dark{
     @include gradient-x(#300871, $black);
-    height: 500px;
 }
 
 .bg-phone{

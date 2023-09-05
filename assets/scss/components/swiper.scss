@@ -1,0 +1,23 @@
+.slide-box{
+    height: 351px;
+
+    @include lg {
+        height: 560px;
+    }
+}
+.alphabox {
+    background-image: url("#{$imgPath}alphabox.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #fff;
+    position: initial;
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    &::after {
+        content: "";
+    }
+}
