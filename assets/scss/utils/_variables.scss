@@ -8,12 +8,12 @@ $breakpoint-lg: map-get($grid-breakpoints, lg);
 
 //color
 $primary-100: #e9e2f3;
-$primary-200: #AD93CF;
+$primary-200: #ad93cf;
 $primary-300: #7000ff;
 $primary-400: #6e01f8;
 $primary-500: #380c7e;
-$primary-600: #1F0F39;
-$primary-700: #11002D;
+$primary-600: #1f0f39;
+$primary-700: #11002d;
 
 $theme-colors: map-merge(
     $theme-colors,
@@ -24,7 +24,7 @@ $theme-colors: map-merge(
         "primary-400": $primary-400,
         "primary-500": $primary-500,
         "primary-600": $primary-600,
-        "primary-700": $primary-700,
+        "primary-700": $primary-700
     )
 );
 
@@ -38,10 +38,16 @@ $headings-line-height: 1.5;
 $font-sizes: map-merge(
     $font-sizes,
     (
+        8: 8px,
+        12: 12px,
         18: 18px,
+        20: 20px,
         48: 48px,
         64: 64px,
-        96: 96px
+        80: 80px,
+        96: 96px,
+        128: 128px,
+        400: 400px
     )
 );
 
@@ -50,22 +56,28 @@ $spacers: map-merge(
     $spacers,
     (
         12: 12px,
+        18: 18px,
         20: 20px,
         28: 28px,
         32: 32px,
+        36: 36px,
         40: 40px,
         52: 52px,
+        54: 54px,
         56: 56px,
         60: 60px,
+        76: 76px,
         80: 80px,
+        96: 96px,
+        124: 124px,
+        144: 144px,
+        160: 160px,
         220: 220px
     )
 );
 
 $headings-margin-bottom: 0;
 $paragraph-margin-bottom: 0;
-
-//nav
 
 //button
 $btn-font-weight: 500;
@@ -75,3 +87,4 @@ $link-decoration: none;
 
 //card
 $card-spacer-x: 24px;
+

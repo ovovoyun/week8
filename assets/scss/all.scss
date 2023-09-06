@@ -1,5 +1,5 @@
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
 
 //utils
 @import "./utils/variables";
@@ -15,6 +15,7 @@
 @import "./layout/header";
 
 //components
+@import "./components/form";
 @import "./components/swiper";
 
 //pages

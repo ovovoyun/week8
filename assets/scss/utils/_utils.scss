@@ -2,8 +2,12 @@
     font-family: "Shrikhand";
 }
 
+.ff-saira{
+    font-family: "Saira Extra Condensed";
+}
+
 .translate-50 {
-    transform: translate(-50px, -50px);
+    transform: translate(-50%, -50%);
 }
 
 .rotate-180 {
@@ -12,12 +16,6 @@
 
 .userSelect-none {
     user-select: none;
-}
-
-.position-lg-static {
-    @include lg {
-        position: static !important;
-    }
 }
 
 .fw-medium{
@@ -46,4 +44,18 @@
 
 .text-justify{
     text-align-last: justify;
+}
+
+@include lg{
+    .border-lg-end{
+        border-right: 1px solid white;
+    }
+
+    .border-lg-bottom{
+        border-bottom: 1px solid white;
+    }
+
+    .position-lg-static {
+        position: static !important;
+    }
 }

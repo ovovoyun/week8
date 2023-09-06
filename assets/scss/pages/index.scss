@@ -1,10 +1,10 @@
 //banner bg
-.banner_bg{
+.banner_bg {
     background-image: url("#{$imgPath}home_background.png");
     background-position: top center;
     background-size: cover;
 
-    @include lg{
+    @include lg {
         max-height: 880px;
     }
 }
@@ -19,8 +19,11 @@
     }
 }
 
-.circleImg {
+.circle {
     @include size(196px, 196px);
+}
+
+.rotateImg {
     animation-name: rotate;
     animation-duration: 6s;
     animation-timing-function: linear;
@@ -28,91 +31,159 @@
     animation-fill-mode: both;
 }
 
-
-.ai_row{
-    @include lg{
+.ai_row {
+    @include lg {
         min-height: 700px;
     }
 }
 
 //banner ai img
-%banner_AI{
+%banner_AI {
     min-height: 350px;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    &:hover {
+        opacity: 1;
+        box-shadow: 0 0 16px 8px rgba(143, 0, 255, 0.8);
+    }
+
+    @include md {
+        min-height: 500px;
+    }
+}
+
+.banner_diane {
+    @extend %banner_AI;
+    max-height: 700px;
+    background-image: url("#{$imgPath}diane_square1.png");
+
+    @include md {
+        background-image: url("#{$imgPath}diane.png");
+    }
+}
+
+.banner_felix {
+    @extend %banner_AI;
+    max-height: 580px;
+    background-image: url("#{$imgPath}felix_square1.png");
+
+    @include md {
+        background-image: url("#{$imgPath}felix.png");
+    }
+}
+
+.banner_karina {
+    @extend %banner_AI;
+    max-height: 580px;
+    background-image: url("#{$imgPath}karina_square1.png");
+
+    @include md {
+        background-image: url("#{$imgPath}karina.png");
+    }
+}
+
+.banner_vito {
+    @extend %banner_AI;
+    max-height: 700px;
+    background-image: url("#{$imgPath}vito_square1.png");
+
+    @include md {
+        background-image: url("#{$imgPath}vito.png");
+    }
+}
+
+.linear-hr {
+    height: 40px;
+}
+
+.purpleToDark {
+    @include gradient-x($primary-300, $primary-700);
+}
+
+
+//what
+.darkToPurple {
+    @include gradient-x($primary-700, $primary-300);
+}
+
+.linear-dark {
+    background-image: url("#{$imgPath}carousel_background.png"), linear-gradient(to right, #300871, $black);
+    background-repeat: no-repeat, no-repeat;
+}
+
+
+//news
+.linear-purpleToDarkCircle {
+    @include radial-gradient(#28085c, $black);
+}
+
+.mw-950 {
+    max-width: 950px;
+}
+
+//share
+.linear-darkToPurpleCircle {
+    @include radial-gradient($black, #28085c);
+}
+
+.shareCardList{
+
+    li{
+        min-height: 351px;
+
+        @include lg{
+            max-width: 416px;
+            min-height: 416px;
+        }
+    }
+}
+
+.shareDecorateText{
+    color: #311263;
+    bottom: -30px;
+
+    @include md{
+        bottom: -60px;
+    }
+
+    @include lg{
+        bottom: -250px;
+    }
+}
+
+//contact us
+.decorateLine{
+    width: 124px;
+    height: 12px;
+    border-radius: 10px;
+}
+
+//intro
+%intro_AI {
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
 
     &:hover{
         opacity: 1;
-        box-shadow: 0 0 16px 8px rgba(143, 0, 255, 0.8);
-    }
-
-    @include md{
-        min-height: 500px;
     }
 }
 
-.banner_diane{
-    @extend %banner_AI;
-    max-height: 700px;
-    background-image: url("#{$imgPath}diane_square1.png");
-    
-    @include md{
-        background-image: url("#{$imgPath}diane.png");
-    }
+.intro_diane {
+    @extend %intro_AI;
+    background-image: url("#{$imgPath}diane.png");
 }
 
-.banner_felix{
-    @extend %banner_AI;
-    max-height: 580px;
-    background-image: url("#{$imgPath}felix_square1.png");
-    
-    @include md{
-        background-image: url("#{$imgPath}felix.png");
-    }
+.intro_felix {
+    background-image: url("#{$imgPath}felix.png");
 }
 
-.banner_karina{
-    @extend %banner_AI;
-    max-height: 580px;
-    background-image: url("#{$imgPath}karina_square1.png");
-    
-    @include md{
-        background-image: url("#{$imgPath}karina.png");
-    }
+.intro_karina {
+    background-image: url("#{$imgPath}karina.png");
 }
 
-.banner_vito{
-    @extend %banner_AI;
-    max-height: 700px;
-    background-image: url("#{$imgPath}vito_square1.png");
-    
-    @include md{
-        background-image: url("#{$imgPath}vito.png");
-    }
-}
-
-.linear-hr{
-    height: 40px;
-}
-
-.purpleToDark{
-    @include gradient-x($primary-300, $primary-700);
-}
-
-.darkToPurple{
-    @include gradient-x($primary-700, $primary-300);
-}
-
-.linear-dark{
-    @include gradient-x(#300871, $black);
-}
-
-.bg-phone{
-    background-image: url("#{$imgPath}carousel_background.png");
-    background-position: center top;
-
-    @include lg{
-        width: 48% !important;
-    }
+.intro_vito {
+    background-image: url("#{$imgPath}vito.png");
 }

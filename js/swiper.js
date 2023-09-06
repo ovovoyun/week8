@@ -14,3 +14,14 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
 });
+
+const shareCardSwiper = new Swiper('.shareCardSwiper', {
+    spaceBetween: 24,
+    slidesPerView: 3,
+    // Scrollbar
+    scrollbar: {
+        el: ".swiper-scrollbar", 
+        draggable: true, 
+    },
+    mousewheel: true,
+});

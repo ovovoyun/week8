@@ -12,6 +12,7 @@
 + Google font
    + [Shrikhand](https://fonts.google.com/specimen/Shrikhand?preview.text=Heading%2096px%20Black&preview.text_type=custom&query=Shrikhand)
    + [Noto Sans TC](https://fonts.google.com/noto/specimen/Noto+Sans+TC)
+   + [Saira Extra Condensed](https://fonts.google.com/specimen/Saira+Extra+Condensed?query=Saira)
 
 ### 安裝
 + `npm i vite`
