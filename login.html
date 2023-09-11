@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALPHABOX+</title>
+    <!-- google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Saira+Extra+Condensed:wght@300&family=Shrikhand&display=swap" rel="stylesheet">
+
+<!-- google icon -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,300,1,0" />
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+<!-- swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>  <script type="module" crossorigin src="/week8/assets/login-2e4388ca.js"></script>
+  <link rel="stylesheet" href="/week8/assets/login-515d82d8.css">
+</head>
+
+<body>
+    <header class="w-100">
+    <nav class="navbar navbar-expand-lg py-0 bg-primary-400 border-bottom border-white navbar-bg">
+        <div class="container d-flex align-items-center position-relative py-12 py-lg-3">
+            <a href="./index.html" class="navbar-brand ff-shrikhand text-white">
+                <h1 class="fs-4 fs-lg-2">ALPHABOX+</h1>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="material-symbols-outlined text-white">menu</span>
+            </button>
+
+            <div class="collapse navbar-collapse position-absolute vw-100 start-50 position-lg-static py-4 py-lg-0 navbar-collapse-bg z-3" 
+                id="navbarSupportedContent">
+                <!-- lg 中間 -->
+                <ul class="navbar-nav text-center mx-lg-auto mb-1 mb-lg-0 gap-1 gap-xl-40">
+                    <li class="nav-item"><a href="#" class="nav-link text-white">產品</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">關於我們</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">最新消息</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">FAQ</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">聯絡我們</a></li>
+                </ul>
+
+                <!-- lg 右邊 -->
+                <ul class="navbar-nav gap-1 text-center">
+                    <li class="nav-item me-lg-4"><a href="#" class="nav-link text-white">註冊</a></li>
+                    <li class="nav-item me-lg-32"><a href="./login.html" class="nav-link text-white">登入</a></li>
+                    <li class="nav-item d-flex justify-content-center">
+                        <a href="#" class="nav-link btn d-flex px-3 rounded-1 bg-white text-black">
+                            <span class="material-symbols-outlined me-1">point_scan</span>
+                            訂閱
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>        <section class="linear-purpleToDarkCircle">
+            <div class="container pt-60 pb-80">
+                <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col-lg-4 mt-lg-100">
+                        <h2 class="fs-1 fs-lg-64 letter-100 fw-black text-white">登入</h2>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <img src="/week8/assets/circle-10d6fa5f.png" alt="circle" class="circle rotateImg img-fluid mb-4">
+                        <h3 class="mb-32 fs-2 ff-shrikhand text-white">ALPHABOX+</h3>
+                        <a href="#"
+                            class="py-10 mb-3 d-flex align-items-center justify-content-center border rounded-24 text-white">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGWSURBVHgBpZQxT8JQEMfv2oomJgbj6sDkCLwgECcdGF0Mm4mKH8HdQeKiH8DNRGcnXJ0gJBoloWmCMXGquwMODELfO68GkNCW9OE/ebn2ev317t7rIWjoybZTC2idAlB5M5teDYuxIKae2+2MiWadYUleblScATFlGlaNTdK/VoTVfwFbtr3DJsWrS0QnBZG+jYqNVfJ3j96XlqligroXQnRnxeK0w298wrAuOJMiEHwhgu0pvEqg96kM64j9+xy2QQCvCNQckLrcEsINBdqdTl566gGGvYop1yQpRpmPS3YcZ33gqTtNGG8QNEDK3uh+DOSySpxvCrREbkFkKpOe8S4TUhk0FXZ8/oCEa6ApBOnOAMICaAPNZCQQDfwATXGbdqOBQC3QFAIevNh2NhwoB4+gr4SBVqPVdg4DwFwu1+Q+zgGlFcPA7QDw9xGqa5hDfZLnocBCNnuD/snXyY+oOvkvB8ZXH2SFTRdiiAfHW15kziZ9AaD/NY9kYTiVfXBNktwjUEXO/pghDc7KY38dFxOl6fd/ANvenUXWOyF6AAAAAElFTkSuQmCC" alt="apple" class="me-10">
+                            Continue with Apple
+                        </a>
+                        <a href="#"
+                            class="mb-4 py-10 d-flex align-items-center justify-content-center border rounded-24 text-white">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJ9SURBVHgBpZRPaBNBFMbf2w3WgmJEoxRLEvDSooVNA6IgNK0H05PSQ1EsNj30aM9F/EONh0IPQr15aayHGvVQjJIcrAmIPdZI0UiRuDSKJRba2sSmSXbHN40pu5MNxfaDXfZ9O+83b94Mg2Chbz7F3qhLvbINupExhQG6vy8foz8sBYAZHWCqfT76GAGZmIuikfUp/YjSGH06jH4FaJJK4BHvfCxkNCVjsNzlHSdYSITVkZuSJ+bauu9ZAn91ekYYYzfgP4XAbs+1+c9VY5m/ijMQkA+VHpQW7BYpbJUxeJ3bOLBIgY0e8yANBto/xV5tT0CDUXsLaequu/jxCPyJuCoYgAwy/bojkUwY85On/X0MIciXzGGez+YeIq+OdmaianBoPuJUNcY6mxJJ1aJk+KD43VAEnwjbApbeQIwacdFolpf29zdeK0wavfPDGR/sIF3DVd4Tp2kGOg4irPJDjsMOonOrSkRoNZrU0y+wS7HKUapRHvYgiS/R5CBcgN0KISVRmUnBtr+LHvXVjGX6gPEha1ocw3RYwPIMDBL0UdWMbLrgfs67qGt6R/LqtGpRB5wd/umWkcWRn0WDdJpIkiV4Tt3MciNcOAnBnJc314myFFee9QRE2PGHt7oIlhBhlKPOjjaHtm6bchz6Xm64nnCYhVRar5peb6AsVOhlP/z7DDRnr4BY3TaQyxPuGaem1r0c0uv7TLERSpdK8P3oiTv8W64OWHqRijb1tvK4wwq4UpRNcaHhB5RsK3Awd2qMYDerfs0Fq0xdDlD/7oLQI7FCQMyCxobWBp+GTTbUEQfTjl2io9BCt2bLP6BK3Z+lrIQjvzb5dSi6Keb9BePV9a0NATGyAAAAAElFTkSuQmCC" alt="google" class="me-10">
+                            Continue with Google
+                        </a>
+
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="197" height="1" viewBox="0 0 197 1" fill="none">
+                                <path
+                                    d="M1 0C0.723858 0 0.5 0.223858 0.5 0.5C0.5 0.776142 0.723858 1 1 1V0ZM1 1H197V0H1V1Z"
+                                    fill="#828282" />
+                            </svg>
+                            <span class="px-1 text-white">or</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="197" height="1" viewBox="0 0 197 1" fill="none">
+                                <path
+                                    d="M1 0C0.723858 0 0.5 0.223858 0.5 0.5C0.5 0.776142 0.723858 1 1 1V0ZM1 1H197V0H1V1Z"
+                                    fill="#828282" />
+                            </svg>
+                            
+                        </div>
+
+                        <form>
+                            <input type="email" class="form-control mb-2 mb-lg-3 fw-bold fs-20" id="userEmail" placeholder="Email" required>
+                            <input type="password" class="form-control mb-2 mb-lg-3 fw-bold fs-20" id="userPwd" placeholder="密碼" required></input>
+
+                            <button
+                                class="w-100 mb-2 btn btn-primary-400 d-flex justify-content-center py-2 rounded-1 text-white">
+                                <span class="material-symbols-outlined me-2 fs-18 fs-lg-4">point_scan</span>
+                                立即登入
+                            </button>
+                        </form>
+                        <a href="#" class="text-end text-white text-decoration-underline">忘記密碼</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <footer>
+    <div class="container py-40 py-lg-52 ">
+        <div class="row row-cols-1 gy-2 justify-content-between">
+            <div class="col-lg-5">
+                <h2 class="ff-shrikhand fs-2">ALPHABOX+</h2>
+                <p class="d-none d-lg-block fw-bold letter-10">Copyright © 2023 Hexschool.</p>
+            </div>
+            <div class="col-lg-1 d-flex justify-content-lg-center">
+                <span class="material-symbols-outlined fs-80">emergency</span>
+            </div>
+            <div class="col-lg-5 d-flex align-items-center justify-content-lg-end">
+                <ul class="navbar-nav flex-lg-row">
+                    <li class="nav-item"><a href="#" class="nav-link fw-bold px-lg-12 py-1">關於我們</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link fw-bold px-lg-12 py-1">產品資訊</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link fw-bold px-lg-12 py-1">常見問題</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link fw-bold ps-lg-12 py-1">隱私政策</a></li>
+                </ul>
+            </div>
+            <div class="col d-lg-none">
+                <p class="fw-bold letter-10">Copyright © 2023 Hexschool.</p>
+            </div>
+        </div>
+    </div>
+</footer>            
+</body>
+
+</html>
