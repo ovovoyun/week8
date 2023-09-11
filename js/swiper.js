@@ -17,11 +17,27 @@ const swiper = new Swiper('.swiper', {
 
 const shareCardSwiper = new Swiper('.shareCardSwiper', {
     spaceBetween: 24,
-    slidesPerView: 3,
-    // Scrollbar
+    slidesPerView: "auto",
+    direction: "vertical",
+    keyboard: {
+        enabled: true,
+    },
+    breakpoints: {
+        1200: {
+            slidesPerView: 3,
+            direction: "horizontal",
+        },
+        992: {
+            slidesPerView: 2,
+            direction: "horizontal",
+        },
+        768: {
+            slidesPerView: 1,
+            direction: "horizontal",
+        },
+    },
     scrollbar: {
-        el: ".swiper-scrollbar", 
+        el: ".swiper-scrollbar",
         draggable: true, 
     },
-    mousewheel: true,
 });

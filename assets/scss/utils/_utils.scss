@@ -42,8 +42,20 @@
     letter-spacing: 1.3em;
 }
 
+.fw-black{
+    font-weight: 900;
+}
+
 .text-justify{
     text-align-last: justify;
+}
+
+.linear-purpleToDarkCircle {
+    @include radial-gradient(#28085c, $black);
+}
+
+.rounded-24{
+    border-radius: 1.5rem;
 }
 
 @include lg{

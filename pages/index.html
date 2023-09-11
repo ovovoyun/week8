@@ -219,7 +219,7 @@
       <div class="overflow-hidden mb-lg-124">
         <div class="container">
           <div class="shareCardSwiper">
-            <ul class="swiper-wrapper px-0 flex-column flex-lg-row shareCardList gap-4 gap-lg-0">
+            <ul class="swiper-wrapper px-0 shareCardList">
               <!-- Slides -->
               <li class="swiper-slide d-flex flex-column justify-content-between w-100 p-4 p-lg-40 bg-primary-500 text-white fw-bold ">
                 <div>
@@ -287,11 +287,11 @@
             </ul>
           </div>
           <!-- Scrollbar -->
-          <div class="row d-none d-lg-flex align-items-center mt-5">
+          <div class="row align-items-center mt-5">
             <div class="col-8">
               <div class="swiper-scrollbar position-static"></div>
             </div>
-            <div class="col-1">
+            <div class="col-1 d-none d-md-block">
               <p class="mb-0 text-white">SCROLL</p>
             </div>
           </div>
@@ -323,17 +323,11 @@
             <span class="mb-3 material-symbols-outlined text-white fs-80">emergency</span>
             <form class="row flex-column row-cols-1">
               <div class="col">
-                <div class="form-floating mb-3 fw-bold">
-                  <input type="email" class="form-control" id="userEmail" placeholder="Email">
-                  <label for="userEmail" class="fs-lg-20">Email</label>
-                </div>
+                  <input type="email" class="form-control mb-3 fw-bold fs-lg-20" id="userEmail" placeholder="Email">
               </div>
 
               <div class="col mb-3">
-                <div class="form-floating fw-bold">
-                  <textarea class="form-control" placeholder="Leave a comment here" id="userComment" style="height: 100px"></textarea>
-                  <label for="userComment" class="fs-lg-20">Comments</label>
-                </div>
+                  <textarea class="form-control fw-bold fs-lg-20" id="userComment" placeholder="Comments" style="height: 100px"></textarea>
               </div>
               
               <div class="col-4 align-self-end">

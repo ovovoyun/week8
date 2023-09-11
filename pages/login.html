@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALPHABOX+</title>
+    <%- include('./layout/head'); -%>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <section class="linear-purpleToDarkCircle">
+            <div class="container pt-60 pb-80">
+                <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col-lg-4 mt-lg-100">
+                        <h2 class="fs-1 fs-lg-64 letter-100 fw-black text-white">登入</h2>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <img src="../assets/images/circle.png" alt="circle" class="circle rotateImg img-fluid mb-4">
+                        <h3 class="mb-32 fs-2 ff-shrikhand text-white">ALPHABOX+</h3>
+                        <a href="#"
+                            class="py-10 mb-3 d-flex align-items-center justify-content-center border rounded-24 text-white">
+                            <img src="../assets/images/apple.png" alt="apple" class="me-10">
+                            Continue with Apple
+                        </a>
+                        <a href="#"
+                            class="mb-4 py-10 d-flex align-items-center justify-content-center border rounded-24 text-white">
+                            <img src="../assets/images/google.png" alt="google" class="me-10">
+                            Continue with Google
+                        </a>
+
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="197" height="1" viewBox="0 0 197 1" fill="none">
+                                <path
+                                    d="M1 0C0.723858 0 0.5 0.223858 0.5 0.5C0.5 0.776142 0.723858 1 1 1V0ZM1 1H197V0H1V1Z"
+                                    fill="#828282" />
+                            </svg>
+                            <span class="px-1 text-white">or</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="197" height="1" viewBox="0 0 197 1" fill="none">
+                                <path
+                                    d="M1 0C0.723858 0 0.5 0.223858 0.5 0.5C0.5 0.776142 0.723858 1 1 1V0ZM1 1H197V0H1V1Z"
+                                    fill="#828282" />
+                            </svg>
+                            
+                        </div>
+
+                        <form>
+                            <input type="email" class="form-control mb-2 mb-lg-3 fw-bold fs-20" id="userEmail" placeholder="Email" required>
+                            <input type="password" class="form-control mb-2 mb-lg-3 fw-bold fs-20" id="userPwd" placeholder="密碼" required></input>
+
+                            <button
+                                class="w-100 mb-2 btn btn-primary-400 d-flex justify-content-center py-2 rounded-1 text-white">
+                                <span class="material-symbols-outlined me-2 fs-18 fs-lg-4">point_scan</span>
+                                立即登入
+                            </button>
+                        </form>
+                        <a href="#" class="text-end text-white text-decoration-underline">忘記密碼</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <%- include('./layout/footer'); -%>
+            <script type="module" src="../js/main.js"></script>
+</body>
+
+</html>
