@@ -71,3 +71,10 @@
         position: static !important;
     }
 }
+
+
+@include xl{
+    .border-xl-end{
+        border-right: 1px solid white;
+    }
+}

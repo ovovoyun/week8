@@ -5,6 +5,7 @@ $imgPath: "../images/";
 $breakpoint-sm: map-get($grid-breakpoints, sm);
 $breakpoint-md: map-get($grid-breakpoints, md);
 $breakpoint-lg: map-get($grid-breakpoints, lg);
+$breakpoint-xl: map-get($grid-breakpoints, xl);
 
 //color
 $primary-100: #e9e2f3;

@@ -167,3 +167,17 @@
         background-color: rgba(0, 0, 0, 0.5) !important;
     }
 }
+
+.cardDivider{
+    position: relative;
+    
+    &:after{
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-color: white;
+    }
+}
